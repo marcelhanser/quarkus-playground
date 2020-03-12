@@ -1,0 +1,16 @@
+pluginManagement {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    plugins {
+      id 'io.quarkus' version "${quarkusPluginVersion}"
+    }
+}
+rootProject.name='code-with-quarkus'
+
+include 'common'
+include 'common-integration'
+include 'domain'
+include 'domain-integration'

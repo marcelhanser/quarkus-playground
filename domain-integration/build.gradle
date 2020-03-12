@@ -1,0 +1,11 @@
+plugins {
+    id 'java'
+    id 'io.quarkus'
+}
+
+dependencies {
+    compile project(':common-integration')
+    compile project(':domain')
+    
+    compile 'io.quarkus:quarkus-resteasy'
+}
